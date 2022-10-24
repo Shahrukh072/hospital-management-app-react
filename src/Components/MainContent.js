@@ -10,9 +10,10 @@ export const MainContent =(props)=>{
         return (
             <div className='col-md-8'>
                <Routes>
-                   <Route path='/' exact component={HomePage}/>
-                   <Route path='/PatientDetails' exact component={PatientDetails} />
-                   <Route path='/AddPatients' exact render={()=> <AddPatient formName='Add Patient' handlerInput={props.handlerInput}  addDetails={props.addPatient}/>} />   
+               <Route path='/' exact component={HomePage}/>
+               <Route path='/AddPatient' exact element={<AddPatient></AddPatient>}/>
+                   <Route path='/PatientDetails' exact element={<PatientDetails></PatientDetails>} />
+                   {/* <Route path='/AddPatients' exact render={()=> <AddPatient formName='Add Patient' handlerInput={props.handlerInput}  addDetails={props.addPatient}/>} />    */}
                </Routes>
             </div>
         )

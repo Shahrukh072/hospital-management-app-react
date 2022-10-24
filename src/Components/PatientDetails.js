@@ -7,7 +7,7 @@ import { AddPatient } from './AddPatients';
 export class PatientDetails extends Component{
     constructor(props){
         super(props);
-        // this.state={PatientData:[],CurrentPage:1,PatientPerPage:10,PageNumbers:[],IsModalOpen:false,patientSelected:{}};
+        this.state={PatientData:[],CurrentPage:1,PatientPerPage:10,PageNumbers:[],IsModalOpen:false,patientSelected:{}};
         this.UpdatePatientDetails=this.UpdatePatientDetails.bind(this);
         this.patientDetailsUpdate={};
         this.handlePatient=this.handlePatient.bind(this);
@@ -71,6 +71,7 @@ export class PatientDetails extends Component{
                 <th>PatientAge</th>
                 <th>PatientProblem</th>
                 <th>PatientPrescription</th>
+                <th>PatientHealthTracking</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -81,6 +82,7 @@ export class PatientDetails extends Component{
                         <td>{patient.PatientAge}</td>
                         <td>{patient.PatientProblem}</td>
                         <td>{patient.PatientPrescription}</td>
+                        <td>{patient.PatientHealthTracking}</td>
                         <td><button id={patient.id} onClick={this.openModal}>Update Details</button></td>
                     </tr>
                     
