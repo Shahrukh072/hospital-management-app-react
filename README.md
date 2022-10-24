@@ -2,8 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ![Login](Login.png)
-![AddPatients]([AddPatients.png)
-![PatientDetails]([PatientDetails.png)
+
+![AddPatients](AddPatients.png)
+
+![PatientDetails](PatientDetails.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
